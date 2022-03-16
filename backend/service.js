@@ -4,7 +4,7 @@ import config from "./config.js";
 import { join, extname } from "path";
 
 const {
-    dir: { publicDirectory },
+    dir: { frontendDirectory },
 } = config;
 
 export class Service {
@@ -22,7 +22,7 @@ export class Service {
      * @returns {Promise<{type: string, name: string}>} Promise<{type: string, name: string}>
      */
     async getFileInfo(file) {
-        const fullFilePath = join(publicDirectory, file);
+        const fullFilePath = join(frontendDirectory, file);
 
         // valida se existe, se não existe estoura erro !!
         await access(fullFilePath);

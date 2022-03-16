@@ -51,7 +51,7 @@ async function routes(request, response) {
                 "Content-Type": CONTENT_TYPE[type],
             });
         }
-        
+
         return stream.pipe(response);
     }
 

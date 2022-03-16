@@ -4,13 +4,13 @@ import { fileURLToPath } from "url";
 const currentDir = dirname(fileURLToPath(import.meta.url));
 const root = join(currentDir, "..");
 const audioDirectory = join(root, "audio");
-const publicDirectory = join(root, "public");
+const frontendDirectory = join(root, "frontend");
 
 export default {
     port: process.env.PORT || 3000,
     dir: {
         root,
-        publicDirectory,
+        frontendDirectory,
         audioDirectory,
         songsDirectory: join(audioDirectory, "songs"),
         fxDirectory: join(audioDirectory, "fx"),
@@ -20,13 +20,13 @@ export default {
         controllerHTML: "controller/index.html",
     },
     location: {
-        home: '/home'
+        home: "/home",
     },
     constants: {
         CONTENT_TYPE: {
-            '.html': 'text/html',
-            '.css': 'text/css',
-            '.js': 'text/javascript'
-        }
-    }
+            ".html": "text/html",
+            ".css": "text/css",
+            ".js": "text/javascript",
+        },
+    },
 };

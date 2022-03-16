@@ -1,0 +1,32 @@
+{
+  "name": "soundview",
+  "version": "1.0.0",
+  "description": "Seja bem vindo(a)",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server",
+    "live-reload": "nodemon server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "17"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/almerindopaixao/soundview.git"
+  },
+  "author": "almerindopaixao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/almerindopaixao/soundview/issues"
+  },
+  "homepage": "https://github.com/almerindopaixao/soundview#readme",
+  "devDependencies": {
+    "nodemon": "2"
+  },
+  "dependencies": {
+    "pino": "7.8.0",
+    "pino-pretty": "7.5.3"
+  }
+}
